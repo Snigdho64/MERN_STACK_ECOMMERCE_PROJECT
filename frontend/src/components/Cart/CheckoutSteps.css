@@ -1,0 +1,38 @@
+.MuiStepper-root p {
+    color: grey;
+    font-weight: bold;
+}
+
+.MuiStepper-root .Mui-active p {
+    color: tomato;
+}
+
+.MuiStepper-root .Mui-completed p {
+    color: green;
+}
+
+.MuiStepper-root .MuiStepConnector-root span {
+    height: 0.5vmax;
+    border-radius: 2px;
+}
+
+.MuiStepper-root .MuiStepConnector-root.Mui-active span {
+    background-color: tomato;
+}
+
+.MuiStepper-root .MuiStepConnector-root.Mui-completed span {
+    background-color: green;
+}
+
+.MuiStepper-root svg {
+    color: tomato;
+    font-size: 4vmax;
+}
+
+.MuiStepper-root .Mui-completed svg {
+    color: green;
+}
+
+.MuiStepper-root .Mui-disabled svg {
+    color: grey;
+}

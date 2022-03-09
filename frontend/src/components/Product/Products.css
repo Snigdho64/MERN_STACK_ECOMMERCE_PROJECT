@@ -1,0 +1,117 @@
+.productsHeading {
+    margin: 2vmax auto;
+    width: 15vmax;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 2vmax 2vmax;
+    color: rgb(0, 182, 149);
+    font: 500 2.5vmax 'Roboto';
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.products > h1 {
+    font-family: cursive;
+    color: red;
+    margin-top: 5vmax;
+    border-top: 1px solid rgba(0, 0, 0, 0.225);
+    padding: 2vmax;
+}
+
+.paginationBox {
+    display: flex;
+    margin: 5vmax;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1vmax;
+}
+
+.page-item {
+    list-style: none;
+    text-decoration: none;
+    border: 1px solid rgba(2, 226, 28, 0.938);
+    padding: 1vmax 2vmax;
+    background-color: rgb(1, 164, 120);
+    outline: none;
+}
+
+.page-link {
+    text-decoration: none;
+    font: 500 2vmax cursive;
+    color: white;
+}
+
+.pageItemActive {
+    background-color: tomato;
+    border: 1px solid rgb(218, 104, 11);
+}
+
+.page-item:hover {
+    transform: scale(1.1);
+    background-color: rgb(12, 202, 56);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    font-weight: bold;
+}
+
+.pageItemActive:hover {
+    background-color: tomato;
+    border: 1px solid rgb(218, 104, 11);
+}
+
+.page-item:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.page-item:last-child {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.filterBox {
+    width: 40vmax;
+    position: static;
+    margin: auto;
+    border: 1px solid grey;
+    padding: 1vmax 3vmax;
+    border-radius: 10px;
+    margin-top: 3vmax;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    background: #fff;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+@media screen and (min-width: 800px) {
+    .page-item {
+        padding: 2.4px 5px;
+    }
+    .page-link {
+        font-size: 1.5rem;
+    }
+
+    .filterBox {
+        width: 15vmax;
+        position: absolute;
+        top: 10vmax;
+        left: 2vmax;
+        padding: 0.5vmax 1vmax;
+    }
+}

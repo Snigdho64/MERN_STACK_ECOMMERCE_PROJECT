@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#root {
+    min-height: 100%;
+    width: 100%;
+    /* position: absolute; */
+    margin: 0;
+    padding: 0;
+}
+
+.menuBurger {
+    width: 8vmax;
+    height: 4vmax;
+}

@@ -1,0 +1,96 @@
+.reviewsListContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.reviewsListContainer > .reviewsListTable {
+    width: 100%;
+}
+
+.reviewsListContainer > .reviewsListTable button:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+.reviewsListContainer > .reviewsListForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: fit-content;
+    min-width: 50%;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1vmax;
+    margin-bottom: 2vmax;
+}
+
+.reviewsListContainer > .reviewsListForm > * {
+    margin-top: 1vmax;
+    width: 80%;
+    text-align: center;
+}
+
+.reviewsListForm > div > input {
+    width: 100%;
+    font: 400 1vmax cursive;
+    padding: 1vmax 2vmax;
+    padding-left: 4vmax;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(133, 133, 133, 0.592);
+}
+
+.reviewsListForm > div > svg {
+    position: absolute;
+    color: teal;
+    transform: translate(25%, 12.5%);
+    font-size: 3vmax;
+    border-radius: 3px;
+}
+
+.reviewsListContainer > .reviewsListForm > #reviewsListButton {
+    padding: 1vmax 2vmax;
+    background-color: tomato;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font: 400 1vmax cursive;
+    max-width: 50%;
+    transition: all 0.5s;
+}
+
+.reviewsListForm > #reviewsListButton:hover {
+    transform: scale(1.1);
+}
+
+.reviewsListForm > #reviewsListButton:active {
+    background-color: rgb(4, 145, 107);
+    transform: scale(1);
+}
+
+@media screen and (max-width: 800px) {
+    .reviewsListForm > div > input {
+        font-size: 2.5vmax;
+    }
+    .reviewsListForm > div > svg {
+        transform: translate(25%, 50%);
+    }
+    .MuiDataGrid-cell {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font: 400 2vmax 'Roboto' !important;
+    }
+}

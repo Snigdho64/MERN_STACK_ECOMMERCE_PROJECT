@@ -1,0 +1,155 @@
+.confirmOrderContainer img {
+    width: 10vmax;
+    height: 10vmax;
+}
+
+.confirmOrderContainer {
+    width: 100vw;
+    height: 90vh;
+    padding: 10vmax;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+}
+
+.confirmOrderContainer h2 {
+    color: tomato;
+    border-bottom: 2px solid red;
+}
+
+.confirmOrderBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confirmOrderBox > div:last-child {
+    flex: 1;
+}
+
+.confirmShippingAddress {
+    padding: 2vmax;
+}
+
+.confirmShippingAddress,
+.confirmCartItems {
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    width: 80%;
+    height: 40vh;
+    overflow: auto;
+}
+
+.confirmShippingAddress p {
+    font-weight: 900;
+}
+
+.confirmCartItems > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1vmax;
+}
+
+.confirmCartItems > div > a {
+    font: 700 1rem 'Roboto';
+    text-transform: capitalize;
+    color: tomato;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.confirmCartItems > div > a:hover {
+    color: rgb(5, 165, 88);
+    transform: scale(1.1);
+    text-decoration: underline solid;
+}
+
+.confirmCartItems > div > span {
+    display: flex;
+    width: 25%;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.confirmCartItems > div > span > p {
+    font: 900 1rem 'Roboto';
+    color: green;
+}
+.confirmCartItems > div > span > p:last-child {
+    font: 900 1rem 'Roboto';
+    color: rgb(144, 11, 11);
+}
+
+.confirmOrderSummary {
+    width: 30%;
+    background-color: goldenrod;
+    padding: 2vmax;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.confirmOrderSummary > div > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: bold;
+    color: teal;
+    margin-top: 1vmax;
+}
+
+.confirmOrderSummary > div > div span {
+    color: green;
+}
+
+.confirmOrderButton {
+    margin-top: 2vmax;
+    background-color: tomato;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    transition: all 0.5s;
+}
+
+.confirmOrderButton:hover {
+    transform: scale(1.1);
+    background-color: rgba(10, 177, 10, 0.748);
+    font-weight: bold;
+}
+
+.confirmOrderButton:active {
+    transform: scale(0.9);
+    background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+    .confirmOrderContainer {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .confirmCartItems {
+        min-height: 40vh;
+        margin-bottom: 5vmax;
+        overflow: auto;
+        justify-content: center;
+    }
+
+    .confirmOrderSummary {
+        width: 70%;
+        flex: 1;
+    }
+}

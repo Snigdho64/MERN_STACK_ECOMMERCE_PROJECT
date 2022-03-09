@@ -1,0 +1,152 @@
+.orderDetailsContainer img {
+    width: 10vmax;
+    height: 10vmax;
+}
+
+.orderDetailsContainer {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 10vmax;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    background: #fff;
+}
+
+.orderDetailsContainer h2 {
+    color: tomato;
+    border-bottom: 2px solid red;
+}
+
+.orderDetailsBox {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1vmax;
+}
+
+.shippingAddress {
+    padding: 2vmax;
+}
+
+.shippingAddress,
+.orderItems {
+    border-radius: 0.8rem;
+    width: 80%;
+    height: 40vh;
+    overflow: auto;
+}
+
+.shippingAddress p {
+    font-weight: 900;
+}
+
+.orderItems > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1vmax;
+}
+
+.orderItems > div > a {
+    font: 700 1rem 'Roboto';
+    text-transform: capitalize;
+    color: tomato;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.orderItems > div > a:hover {
+    color: rgb(5, 165, 88);
+    transform: scale(1.1);
+    text-decoration: underline solid;
+}
+
+.orderItems > div > span {
+    display: flex;
+    width: 25%;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.orderItems > div > span > p {
+    font: 900 1rem 'Roboto';
+    color: green;
+}
+.orderItems > div > span > p:last-child {
+    font: 900 1rem 'Roboto';
+    color: rgb(144, 11, 11);
+}
+
+.paymentDetails {
+    margin-top: 3vmax;
+    width: 70%;
+    background-color: goldenrod;
+    padding: 2vmax;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.paymentDetails > p > span {
+    color: green;
+}
+
+.paymentDetails.paid > p:last-child {
+    color: green;
+}
+
+.paymentDetails.notPaid > p:last-child {
+    color: red;
+}
+
+.orderDetailsButton {
+    margin-top: 2vmax;
+    background-color: tomato;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    transition: all 0.5s;
+}
+
+.orderDetailsButton:hover {
+    transform: scale(1.1);
+    background-color: rgba(10, 177, 10, 0.748);
+    font-weight: bold;
+}
+
+.orderDetailsButton:active {
+    transform: scale(0.9);
+    background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+    .orderDetailsContainer {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .orderItems {
+        min-height: 40vh;
+        margin-bottom: 5vmax;
+        overflow: auto;
+        justify-content: center;
+    }
+
+    .paymentDetails {
+        width: 70%;
+        flex: 1;
+    }
+}

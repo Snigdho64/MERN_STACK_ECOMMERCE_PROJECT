@@ -1,0 +1,93 @@
+.cartItemCard {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    padding: 0;
+    font-family: Roboto;
+    font-weight: bold;
+    cursor: default;
+}
+
+.cartItemCard > div > img {
+    width: 4vmax;
+    height: 4vmax;
+}
+
+.cartItemCard > div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.205);
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.cartItemCard > div:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    border-left: none;
+    padding: 2vmax;
+}
+
+.cartItemCard > div button {
+    outline: none;
+    border: none;
+    padding: 0.5vmax 0.7vmax;
+    background-color: #777;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.cartItemCard > div:first-child > button {
+    background-color: darkred;
+}
+.cartItemCard > div:first-child > button:hover {
+    background-color: rgb(189, 0, 0);
+}
+
+.cartItemCard > div button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+.cartItemCard > div:nth-last-child(2) > input {
+    margin: 0 1vmax;
+    width: 100%;
+    width: 15%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.cartItemCard > div:last-child {
+    color: #34af78;
+}
+
+.cartItemCard > div:first-child > span {
+    color: #34af78;
+}
+
+.cartItemCard > div:first-child > a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: cursive;
+    color: rgb(160, 91, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .cartItemCard > div {
+        min-height: 10vmax;
+    }
+
+    .cartItemCard > div:first-child {
+        position: relative;
+    }
+
+    .cartItemCard > div:first-child > button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font: 500 2vmax 'Roboto';
+    }
+}

@@ -1,0 +1,84 @@
+.paymentContainer {
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto';
+    height: 90vh;
+    width: 100%;
+}
+
+.paymentContainer h2 {
+    color: tomato;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.paymentContainer > .paymentForm {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: 20px;
+    padding: 2vmax 4vmax;
+    min-width: 30vmax;
+    min-height: 40vmax;
+    background-color: silver;
+    display: grid;
+    place-items: center;
+}
+
+.paymentContainer div {
+    width: 100%;
+    min-height: 5vmax;
+    /* padding: 1vmax; */
+    min-width: 30vmax;
+    font-size: 1rem;
+}
+
+.paymentContainer div svg {
+    font-size: 2vmax;
+    color: tomato;
+}
+
+.paymentContainer input[type='submit'] {
+    margin-top: 2vmax;
+    background-color: tomato;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: cursive;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    transition: all 0.5s;
+}
+
+.paymentContainer input[type='submit']:hover {
+    transform: scale(1.1);
+    background-color: rgba(10, 177, 10, 0.748);
+    font-weight: bold;
+}
+
+.paymentContainer input[type='submit']:disabled {
+    background-color: grey;
+    font-weight: normal;
+}
+
+.InputElement {
+    padding: 1vmax 2vmax !important;
+    border: 1px solid rgb(20, 20, 20) !important;
+    font-size: 2vmax !important;
+    font-weight: bold !important;
+}
+
+@media screen and (max-width: 768px) {
+    .paymentContainer > .paymentForm > div svg {
+        font-size: 4vmax;
+    }
+    .paymentContainer > .paymentForm > div > .paymentInput {
+        font-size: 4vmax;
+        margin: 1vmax;
+        padding: 1vmax;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+}

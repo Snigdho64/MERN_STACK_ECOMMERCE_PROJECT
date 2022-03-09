@@ -1,0 +1,155 @@
+.aboutSection {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    position: fixed;
+}
+
+.aboutSection > div:first-child {
+    background: linear-gradient(
+        to bottom right,
+        rgb(14, 221, 204),
+        rgb(89, 0, 255)
+    );
+}
+
+.aboutSectionGradient {
+    background: linear-gradient(
+        to bottom left,
+        rgb(14, 221, 204),
+        rgb(89, 0, 255)
+    );
+}
+
+.aboutSectionContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.521);
+    width: 80vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutSectionContainer > h1 {
+    font: 400 3vmax 'Roboto';
+    color: tomato;
+    margin: 2vmax;
+    text-decoration: underline;
+}
+
+.aboutSectionContainer > div {
+    width: 100%;
+    display: flex;
+}
+
+.aboutSectionContainer > div > div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+
+.aboutSectionContainer > div > div > p {
+    color: rgba(0, 0, 0, 0.623);
+    font: 100 1vmax 'Roboto';
+}
+
+.aboutSectionContainer > div > div > button {
+    margin: 1vmax 0;
+}
+
+.aboutSectionContainer > div > div > button:hover {
+    color: rgb(197, 92, 92);
+}
+
+.aboutSectionContainer > div > div > span {
+    font: 100 1vmax 'Roboto';
+    color: rgba(0, 0, 0, 0.616);
+    text-align: center;
+    width: 80%;
+}
+
+.aboutSectionContainer2 {
+    border-left: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.aboutSectionContainer2 > h2 {
+    color: rgba(0, 0, 0, 0.623);
+    font: 100 2vmax 'Roboto';
+    margin: 2vmax;
+}
+
+.aboutSectionContainer2 > a {
+    transition: all 0.5s;
+}
+
+.aboutSectionContainer2 > a:hover {
+    padding: 2vmax;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.24);
+}
+
+.aboutSectionContainer2 > a > svg {
+    cursor: url('https://img.icons8.com/color/48/000000/edit--v2.png'), pointer;
+    font-size: 4vmax;
+    transition: all 0.5s;
+}
+
+.aboutSectionContainer2 > a > svg:hover {
+    transform: scale(1.1);
+}
+
+.aboutSectionContainer2 > a:nth-child(3) > svg {
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutSectionContainer > div {
+        display: block;
+    }
+
+    .aboutSectionContainer > h1 {
+        font: 400 5vmax 'Roboto';
+        margin: 3vmax;
+    }
+
+    .aboutSectionContainer > div > div > p {
+        font: 100 2vmax 'Roboto';
+    }
+
+    .aboutSectionContainer > div > div > span {
+        font: 400 2vmax 'Roboto';
+        width: 70%;
+    }
+
+    .aboutSectionContainer .aboutSectionContainer2 {
+        display: flex;
+        flex-direction: row;
+        border-left: none;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 3vmax;
+        position: relative;
+    }
+
+    .aboutSectionContainer2 > h2 {
+        position: absolute;
+        top: -10%;
+        font: 100 3vmax 'Roboto';
+        margin: auto;
+    }
+
+    .aboutSectionContainer2 > a > svg {
+        font-size: 6vmax;
+        margin: 1vmax;
+    }
+}

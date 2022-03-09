@@ -1,0 +1,157 @@
+.updateProfileContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 163, 163);
+}
+
+.updateProfileBox {
+    background-color: rgba(255, 255, 255, 0.544);
+    width: 40vw;
+    height: 80vh;
+    overflow: hidden;
+    padding: 2vmax;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.225);
+}
+
+.updateProfileBox > h2 {
+    font: 700 1.5rem 'Roboto', 'Helvetica Neue', Arial;
+    text-align: center;
+    color: #777;
+    cursor: default;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    width: 50%;
+    margin-top: 2vmax;
+}
+
+.loginForm,
+.updateProfileForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vmax 0;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.updateProfileForm > div > input {
+    width: 100%;
+    font: 400 1vmax cursive;
+    padding: 1vmax 2vmax;
+    padding-left: 4vmax;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.updateProfileForm > div > svg {
+    position: absolute;
+    color: teal;
+    transform: scale(1.2) translate(0.5vmax, 1vmax);
+    border-radius: 3px;
+}
+
+.updateProfileForm > input[type='submit'] {
+    padding: 1vmax 2vmax;
+    background-color: tomato;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font: 500 1.5 cursive;
+    width: 15vw;
+    transition: all 0.5s;
+}
+
+.updateProfileForm > input[type='submit']:hover {
+    transform: scale(1.1);
+    opacity: 0.75;
+}
+
+.updateProfileForm > input[type='submit']:active {
+    background-color: rgb(4, 145, 107);
+    transform: scale(1);
+}
+
+.updateProfileForm > .updateProfileImage {
+    height: 10vmax;
+    width: 100%;
+    padding: 1vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.updateProfileForm .updateProfileImage > img {
+    object-fit: fill;
+    object-position: center;
+    width: 10vmax;
+    height: 10vmax;
+    border-radius: 50%;
+}
+
+.updateProfileForm > .updateProfileImage > input {
+    padding: 1vmax;
+    width: 100%;
+    display: flex;
+    font-size: 2vmax;
+}
+
+.updateProfileImage > input::file-selector-button {
+    cursor: pointer;
+    background-color: tomato;
+    color: #fff;
+    font: 400 1vmax cursive;
+    padding: 1vmax;
+    outline: none;
+    border: none;
+}
+
+.updateProfileImage > input::file-selector-button:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+    .updateProfileBox {
+        width: 70vmax;
+    }
+
+    .updateProfileBox > form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .updateProfileBox > form > div > input {
+        font-size: 1rem;
+    }
+
+    .updateProfileBox > form > input[type='submit'] {
+        width: 120px;
+    }
+
+    .updateProfileForm {
+        padding: 0;
+    }
+
+    .updateProfileForm .updateProfileImage > img {
+        width: 16vmax;
+        height: 16vmax;
+    }
+
+    .updateProfileImage > img {
+        height: 100px;
+    }
+
+    .updateProfileForm > div > svg {
+        padding-right: 0.5vmax;
+        transform: scale(0.9) translateY(0.8vmax);
+    }
+}

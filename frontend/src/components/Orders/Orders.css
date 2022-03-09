@@ -1,0 +1,78 @@
+.ordersPage {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 2vmax 4vmax;
+}
+
+.ordersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    padding: 4vmax;
+}
+
+.ordersContainer > h2 {
+    background-color: #333;
+    color: #fff;
+    padding: 1vmax 2vmax;
+    transition: all 0.5s;
+}
+
+.ordersContainer > h2:hover {
+    color: tomato;
+    font-weight: bold;
+}
+
+.myOrderGrid {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.MuiDataGrid-columnHeadersInner div {
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+}
+/* .MuiDataGrid-cell {
+    background-color: gold;
+    color: teal;
+} */
+
+.MuiDataGrid-cell a {
+    text-decoration: none;
+    color: orange;
+    transition: all 0.5s;
+}
+
+.MuiDataGrid-cell a:hover {
+    color: tomato;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+    .MuiDataGrid-columnHeadersInner div {
+        font-size: 16px !important;
+        font-weight: normal;
+    }
+    .MuiDataGrid-cell {
+        font-size: 12px;
+    }
+    .MuiDataGrid-cell {
+        font-size: 12px;
+    }
+    .MuiDataGrid-cell svg {
+        font-size: 12px;
+    }
+    .MuiTablePagination {
+        font-size: 12px;
+    }
+}

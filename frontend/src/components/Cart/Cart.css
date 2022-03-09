@@ -1,0 +1,122 @@
+.cartPage {
+    padding: 5vmax;
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartHeader {
+    width: 100%;
+    background-color: tomato;
+    box-sizing: border-box;
+    color: #fff;
+    display: grid;
+    height: 4vmax;
+    grid-template-columns: 4fr 1fr 1fr;
+    font: 500 1rem 'Roboto';
+}
+
+.cartHeader > p {
+    display: grid;
+    place-items: center;
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.cartTotal {
+    width: 50%;
+    margin-top: 5vmax;
+    padding: 1vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.205);
+    font: 500 1rem 'Roboto';
+    border-radius: 10px;
+    align-self: flex-end;
+    transition: all 0.5s;
+}
+
+.cartTotal:hover {
+    transform: translateY(-2vmax);
+    background-color: rgba(128, 128, 128, 0.503);
+}
+
+.cartTotal > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cartTotal > div > p {
+    font: 700 1.2rem 'Roboto';
+    padding: 1vmax 0;
+}
+
+.cartTotal > div > p:last-child {
+    color: green;
+}
+
+.cartTotal > button,
+.cartEmpty > a {
+    outline: none;
+    border: none;
+    margin: 1vmax;
+    padding: 1vmax 1.5vmax;
+    background-color: tomato;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.5s;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+.cartTotal > button:hover,
+.cartEmpty > a:hover {
+    transform: scale(1.1);
+    background-color: rgb(199, 50, 24);
+}
+.cartTotal > button:active,
+.cartEmpty > a:active {
+    transform: scale(1);
+    background-color: rgb(0, 126, 172);
+}
+
+.cartEmpty {
+    display: grid;
+    place-items: center;
+}
+
+.cartEmpty svg {
+    font-size: 5rem;
+    color: tomato;
+}
+
+.cartEmpty > p {
+    font: 700 2rem cursive;
+}
+
+@media screen and (max-width: 768px) {
+    .cartPage {
+        padding: 0;
+        margin: 5vmax;
+    }
+
+    .cartTotal {
+        align-self: center;
+        padding-bottom: 3vmax;
+    }
+}

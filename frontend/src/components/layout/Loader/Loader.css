@@ -1,0 +1,22 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: grid;
+    place-items: center;
+}
+
+.spinner {
+    width: 10vmax;
+    height: 10vmax;
+    color: tomato;
+    border-bottom: 5px solid rgba(105, 105, 105, 0.781);
+    border-radius: 50%;
+    animation: 800ms linear 100ms infinite spin;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(-360deg);
+    }
+}

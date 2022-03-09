@@ -1,0 +1,181 @@
+.login-register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 163, 163);
+}
+
+.login-register-box {
+    background-color: rgba(255, 255, 255, 0.544);
+    width: 40vw;
+    height: 80vh;
+    overflow: hidden;
+    padding: 2vmax;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.225);
+}
+
+.login-register-toggle {
+    cursor: pointer;
+    width: 100%;
+    font: 500 2vmax 'Roboto';
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login-register-toggle > p:hover {
+    color: tomato;
+    text-shadow: 0 0px 2px rgba(255, 255, 255, 0.5);
+}
+
+.login-register-box > button {
+    margin-top: 0.5vmax;
+    background-color: tomato;
+    height: 3px;
+    width: 50%;
+    border: none;
+    transition: all 0.5s;
+    align-self: flex-start;
+}
+
+.loginForm,
+.registerForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1vmax 0;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.loginForm > div > input,
+.registerForm > div > input {
+    width: 100%;
+    font: 400 1vmax cursive;
+    padding: 1vmax 2vmax;
+    padding-left: 4vmax;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.loginForm > div > svg,
+.registerForm > div > svg {
+    position: absolute;
+    color: teal;
+    transform: scale(1.2) translate(0.5vmax, 1vmax);
+    border-radius: 3px;
+}
+
+.loginForm > a {
+    color: black;
+    text-decoration: none;
+    font: 400 1.5vmax 'Roboto';
+    align-self: flex-end;
+}
+
+.loginForm > a:hover {
+    transform: scale(1.1);
+    color: tomato;
+    border-bottom: 1px solid tomato;
+}
+
+.loginForm > input[type='submit'],
+.registerForm > input[type='submit'] {
+    padding: 1vmax 2vmax;
+    background-color: tomato;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font: 500 1.5 cursive;
+    width: 15vw;
+    transition: all 0.5s;
+}
+
+.loginForm > input[type='submit']:hover,
+.registerForm > input[type='submit']:hover {
+    transform: scale(1.1);
+    opacity: 0.75;
+}
+
+.loginForm > input[type='submit']:active,
+.registerForm > input[type='submit']:active {
+    background-color: rgb(4, 145, 107);
+    transform: scale(1);
+}
+
+.registerForm > .registerImage {
+    height: 10vmax;
+    width: 100%;
+    padding: 1vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.registerForm .registerImage > img {
+    object-fit: fill;
+    object-position: center;
+    width: 10vmax;
+    height: 10vmax;
+    border-radius: 50%;
+}
+
+.registerForm > .registerImage > input {
+    padding: 1vmax;
+    width: 100%;
+    display: flex;
+}
+
+.registerImage > input::file-selector-button {
+    cursor: pointer;
+    background-color: tomato;
+    color: #fff;
+    font: 400 1vmax cursive;
+    padding: 1vmax;
+    outline: none;
+    border: none;
+}
+
+.shiftToLeft {
+    transform: translateX(-150%);
+}
+
+.shiftToRight {
+    transform: translateX(100%);
+}
+
+.shiftToNeutral {
+    transform: translateX(0);
+}
+
+.shiftToNeutralForm {
+    transform: translateX(0) translateY(-100%);
+}
+
+@media screen and (max-width: 800px) {
+    .login-register-box {
+        width: 50vmax;
+        height: 60vmax;
+        /* padding: 0; */
+    }
+    .login-register-box > button {
+        margin-top: 1vmax;
+    }
+
+    .loginForm,
+    .registerForm {
+        padding: 0;
+    }
+    .loginForm > div > svg,
+    .registerForm > div > svg {
+        transform: scale(0.8) translateY(0.3vmax);
+    }
+}

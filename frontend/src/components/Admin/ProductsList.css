@@ -1,0 +1,70 @@
+.productsListContainer {
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.205);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.productsListContainer > h1 {
+    font: 400 2rem 'Roboto';
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 5);
+    transition: all 0.5s;
+    margin: 2rem;
+    text-align: center;
+}
+
+.productsListTable {
+    background-color: #fff;
+    border: none !important;
+}
+
+.productsListTable div {
+    font: 300 1vmax 'roboto';
+    color: rgba(0, 0, 0, 605);
+    border: none !important;
+}
+
+.productsLisTable a {
+    color: rgba(0, 0, 0, 605);
+    transition: all 0.5s;
+}
+
+.productsLisTable a:hover {
+    color: tomato;
+    transform: scale(1.1);
+}
+
+.productsLisTable button:hover {
+    color: rgb(211, 56, 29);
+}
+
+.MuiDataGrid-columnHeaders > div > div > div {
+    min-height: 5vmax !important;
+    /* height: 5vmax; */
+    max-height: 10vmax !important;
+    color: #fff;
+}
+
+.MuiDataGrid-columnHeaderTitleContainer > div {
+    color: #fff;
+}
+
+.MuiDataGrid-columnHeaderDraggableContainer {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .MuiDataGrid-cell {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font: 400 2vmax 'Roboto' !important;
+    }
+    
+}
